@@ -1,5 +1,7 @@
-[https://www.youtube.com/@Micro_Niko_]
+Hi there
 
-[https://bsky.app/profile/microniko.zip]
+[youtube](https://www.youtube.com/@Micro_Niko_)
 
-[https://groovestats.com/?page=profile&id=176691]
+[bsky](https://bsky.app/profile/microniko.zip)
+
+[groovestats](https://groovestats.com/?page=profile&id=176691)
