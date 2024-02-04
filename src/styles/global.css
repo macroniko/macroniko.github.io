@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Noto+Sans+Mono&family=Source+Code+Pro&display=swap');
 html {
-    background-color: rgb(39, 39, 39);
+    background-color: rgb(20, 20, 20);
     font-family: 'Inconsolata', monospace;
 
     font-family: 'Noto Sans Mono', monospace;
@@ -12,7 +12,7 @@ html {
   body {
     margin: 0 auto;
     width: 100%;
-    max-width: 140ch;
+    max-width: 130ch;
     padding: 1rem;
     line-height: 1.5;
   }
@@ -26,9 +26,17 @@ html {
     font-size: 2.5rem;
   }
 
-/* nav styles */
+  .blog_header h1 {
+    font-weight: bold;
+  }
 
-.nav-links {
+  .blog_header h2 {
+    color: rgb(128,128,128);
+
+  }
+
+/* nav styles */
+  .nav-links {
     width: 100%;
     top: 5rem;
     left: 0px;
@@ -57,7 +65,7 @@ html {
     display: unset;
   }
   
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 1200px) {
     .nav-links {
       margin-left: -1em;
       display: block;
@@ -65,6 +73,11 @@ html {
       width: auto;
       background: none;
       border-bottom: 2px solid rgb(255, 255, 255);
+      display: flex;
+      flex-direction: row;
+      border-bottom: 2px solid white;
+      justify-content: left;
+      align-items: center
     }
   
     .nav-links a {
@@ -77,8 +90,10 @@ html {
     }
     .nav-links #search {
         padding-left: 0em;
-        margin-left: 37em;
-
+        margin-left: 34em;
+        color: white;
+        text-align: justify;
+        background-color: rgb(39,39,39);
     }
   
-  }
+  } 

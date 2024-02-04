@@ -5,10 +5,11 @@ pubDate: 2024-02-02
 description: 'test'
 author: 'microniko'
 image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
+    url: '/IMG_0770.jpg'
     alt: 'The full Astro logo.'
 tags: ["astro", "blogging", "learning in public"]
 ---
+
 # A test post
 ## a test post
 ### a test post

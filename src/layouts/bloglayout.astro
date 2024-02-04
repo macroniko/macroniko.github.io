@@ -15,9 +15,13 @@ import Header from '../components/Header.astro';
     </head>
   <!-- ... -->
   <Header />
+  <div class="blog_header">
   <h1>{frontmatter.title}</h1>
-  <h2>Post author: {frontmatter.author}</h2>
+  <h2>Written by {frontmatter.author}</h2>
   <p>{frontmatter.description}</p>
+  <img src={frontmatter.image.url} alt={frontmatter.image.alt} height="400">
+  <hr>
+  </div>
   <slot /> <!-- Markdown content is injected here -->
    <!-- ... -->
 </html>
