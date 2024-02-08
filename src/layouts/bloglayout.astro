@@ -2,22 +2,20 @@
 const {frontmatter} = Astro.props;
 import Header from '../components/Header.astro';
 ---
-<html>
+<html prefix="og: https://ogp.me/ns#">
     <head>
         <meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="../../public/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{frontmatter.title}</title> 
-    <meta content={frontmatter.title} property="og:title" />
-    <meta content={frontmatter.description} property="og:description" />
-    <meta id=urlloc content="www.gayporn.com" property="og:url" />
-    <meta content={frontmatter.image.url} property="og:image" />
-    <meta content="#E9E9E9" data-react-helmet="true" name="theme-color" />
-        <script>
+        <link rel="icon" type="image/svg+xml" href="../../public/favicon.ico" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{frontmatter.title}</title> 
+          <meta content={frontmatter.title} property="og:title" />
+          <meta content={frontmatter.description} property="og:description" />
+          <meta content={frontmatter.url} property="og:url" />
+          <meta content={frontmatter.image.url} property="og:image" />
+          <meta content="#E9E9E9" data-react-helmet="true" name="theme-color" />
+    <script>
 			import '../styles/global.css';
-      var currentLocation = window.location.href;
-      document.getElementById('urlloc')?.innerHTML = currentLocation;
 		</script> 
     </head>
   <!-- ... -->

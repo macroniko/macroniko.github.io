@@ -2,7 +2,7 @@
 import Header from '../components/Header.astro';;
 ---
 
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="../../public/favicon.ico" />
@@ -11,7 +11,7 @@ import Header from '../components/Header.astro';;
 		<title>microniko</title>
 		<meta property="og:title" content="About Me" />
 		<meta content="hello" property="og:description" />
-		<meta property="og:url" content="https://www.microniko.zip" />
+		<meta property="og:url" content={frontmatter.url} />
 		<script>
 			import '../styles/global.css';
 			
