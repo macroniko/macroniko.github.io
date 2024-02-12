@@ -1,25 +1,7 @@
 ---
-const {frontmatter} = Astro.props;
-import Header from '../components/Header.astro';
+import IndexLayout from '../layouts/indexlayout.astro'
 ---
 
-<html lang="en" prefix="og: https://ogp.me/ns#">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="../../public/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>microniko</title>
-		<meta property="og:title" content="Home" />
-		<meta content="whats good" property="og:description" />
-		<meta content="www.microniko.zip" property="og:url" />
-		<script>
-			import '../styles/global.css';
-			
-		</script>
-	</head>
-	<body>
-		<Header />
-		<h1>Landing page for this site for now</h2>
-	</body>
-</html>
+<IndexLayout title="microniko" subtitle="Landing page for this site for now">
+	<p>hiii hello does this workkkkk???</p>
+</indexlayout>

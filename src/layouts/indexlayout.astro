@@ -1,0 +1,20 @@
+---
+import CommonHead from '../components/CommonHead.astro';
+import Header from '../components/Header.astro';
+const {title, subtitle} = Astro.props;
+import '../styles/index.css';
+import '../styles/nav.css';
+---
+
+<html lang="en" prefix="og: https://ogp.me/ns#">
+    <head>
+        <CommonHead title={title}/>
+    </head>
+    <body>
+       <Header />
+       <h1>{subtitle}</h1>
+       <article>
+        <slot />
+       </article>
+    </body>
+</html>

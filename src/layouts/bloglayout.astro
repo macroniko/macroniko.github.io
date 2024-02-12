@@ -1,11 +1,15 @@
 ---
 const {frontmatter} = Astro.props;
 import Header from '../components/Header.astro';
+import '../styles/index.css';
+import '../styles/nav.css';
 ---
 <html prefix="og: https://ogp.me/ns#">
     <head>
         <meta charset="utf-8" />
         <link rel="icon" type="image/svg+xml" href="../../public/favicon.ico" />
+        <link rel="stylesheet" href="../styles/blog.css"/>
+        <link rel="stylesheet" href="../styles/nav.css"/>
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
         <title>{frontmatter.title}</title> 
@@ -14,9 +18,6 @@ import Header from '../components/Header.astro';
           <meta content={frontmatter.url} property="og:url" />
           <meta content={frontmatter.image.url} property="og:image" />
           <meta content="#E9E9E9" data-react-helmet="true" name="theme-color" />
-    <script>
-			import '../styles/global.css';
-		</script> 
     </head>
   <!-- ... -->
   <Header />
